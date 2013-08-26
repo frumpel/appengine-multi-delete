@@ -1,0 +1,24 @@
+{
+  "name": "AppEngine Version Multi-Delete",
+  "version": "0.1",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://appengine.google.com/deployment?*"],
+      "js": ["inject.js","inject_js_1.js"]
+    },
+    {
+      "matches": ["https://appengine.google.com/deployment/deleteversion*"],
+      "js": ["forceok.js"]
+    }
+  ],
+  "web_accessible_resources": ["inject_js_1.js"],
+  "browser_action": {
+    "default_icon": "gear-icon.png",
+    "default_title": "AE multidel"
+  },
+  "manifest_version": 2
+}

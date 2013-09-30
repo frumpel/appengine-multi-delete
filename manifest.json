@@ -11,7 +11,7 @@
       "js": ["inject.js","inject_js_1.js"]
     },
     {
-      "matches": ["https://appengine.google.com/deployment/deleteversion*"],
+      "matches": ["https://appengine.google.com/deployment/deleteversion?*"],
       "js": ["forceok.js"]
     }
   ],
